@@ -1,0 +1,29 @@
+{
+  "name": "tailwind-tutorial",
+  "version": "1.0.0",
+  "description": "learn & practise tutorial",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss build -i ./src/css/input.css -o ./src/css/output.css",
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHVM-09/tailwind-tutorial.git"
+  },
+  "keywords": [
+    "tailwind",
+    "npm",
+    "tutorial",
+    "practise"
+  ],
+  "author": "https://github.com/SHVM-09",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SHVM-09/tailwind-tutorial/issues"
+  },
+  "homepage": "https://github.com/SHVM-09/tailwind-tutorial#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

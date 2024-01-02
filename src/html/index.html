@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Tutorial - Landing Page </title>
+    <link href="../css/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="relative container mx-auto p-5">
+<!-- Flex Container -->
+<div class="flex items-center justify-between">
+  <!-- Left Side (Logo) -->
+  <div class="pt-2">
+    <img src="../assets/logo.svg" alt="Company logo">
+  </div>
+  <!-- Center (Menu Item Links) -->
+  <div class="hidden space-x-4 lg:space-x-6 md:flex">
+    <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+    <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+  </div>
+  <!-- Right Side (Button) -->
+  <a href="#" class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline md:block hover:bg-brightRedLight form-close">Contact Us</a>
+
+<!-- Hamburger Icon -->
+<button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+  <span class="hamburger-top"></span>
+  <span class="hamburger-middle"></span>
+  <span class="hamburger-bottom"></span>
+</button>
+
+<!-- Mobile Menu -->
+<div class="md:hidden">
+  <div id="menu" class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden">
+    <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+    <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+    <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+  </div>
+</div>
+
+</div>
+</nav>
+
+<!-- Hero Section-->
+<section id="hero">
+  <!-- Flex Container -->
+  <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
+    <!-- Left Item -->
+    <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+      <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        Bring everyone together to build better products.
+      </h1>
+      <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+        Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.
+      </p>
+      <div class="flex justify-center md:justify-start">
+        <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+      </div>
+    </div>
+    <!-- Right Item (Image) -->
+    <div class="md:w-1/2">
+      <img src="../assets/illustration-intro.svg" alt="Manage Graphs">
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features">
+  <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:flex-row">
+    <!-- What's Different -->
+    <div class="flex flex-col space-y-12 md:w-1/2">
+      <h2 class="max-w-md text-4xl font-bold md:mt-10">
+        What's different about Manage?
+      </h2>
+      <p class="max-w-sm text-darkGrayishBlue">
+        Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
+      </p>
+    </div>
+    <!-- Numbered List -->
+    <div class="flex flex-col space-y-8 md:w-1/2">
+      <!-- List Item 1 -->
+      <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+        <!-- Heading -->
+        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+          <div class="flex items-center space-x-2">
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              01
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Track company-wide progress
+            </h3>
+          </div>
+        </div>
+        <!-- Description -->
+        <div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Track company-wide progress
+          </h3>
+          <p class="text-darkGrayishBlue">
+            See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+      </div>
+      <!-- List Item 2 -->
+      <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+        <!-- Heading -->
+        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+          <div class="flex items-center space-x-2">
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              02
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Advanced built-in reports
+            </h3>
+          </div>
+        </div>
+        <!-- Description -->
+        <div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Track company-wide progress
+          </h3>
+          <p class="text-darkGrayishBlue">
+          Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.
+          </p>
+        </div>
+      </div>
+      <!-- List Item 3 -->
+      <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+        <!-- Heading -->
+        <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+          <div class="flex items-center space-x-2">
+            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">
+              03
+            </div>
+            <h3 class="text-base font-bold md:mb-4 md:hidden">
+              Track company-wide progress
+            </h3>
+          </div>
+        </div>
+        <!-- Description -->
+        <div>
+          <h3 class="hidden mb-4 text-lg font-bold md:block">
+            Track company-wide progress
+          </h3>
+          <p class="text-darkGrayishBlue">
+            Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials-->
+<section id="testimonials">
+  <!-- Container to heading and testimonial blocks -->
+  <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl font-bold text-center">
+      What's Different About Manage?
+    </h2>
+    <!-- Testimonials container -->
+    <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+      <!-- Testimonial 1 -->
+      <div class="flex flex-col items-center p-6 space-y-6 bg-veryLightGray md:w-1/3">
+        <img src="../assets/avatar-anisha.png" alt="Anisha's Avatar" class="w-16 -mt-14">
+        <h5 class="text-lg font-bold">Anisha Li</h5>
+        <p class="text-sm text-darkGrayishBlue">
+          “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="hidden flex-col items-center p-6 space-y-6 bg-veryLightGray md:w-1/3 md:flex">
+        <img src="../assets/avatar-ali.png" alt="Anisha's Avatar" class="w-16 -mt-14">
+        <h5 class="text-lg font-bold">Ali Bravo</h5>
+        <p class="text-sm text-darkGrayishBlue">
+          “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="hidden flex-col items-center p-6 space-y-6 bg-veryLightGray md:w-1/3 md:flex">
+        <img src="../assets/avatar-richard.png" alt="Anisha's Avatar" class="w-16 -mt-14">
+        <h5 class="text-lg font-bold">Richard Watts</h5>
+        <p class="text-sm text-darkGrayishBlue">
+          “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="my-16">
+    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="bg-brightRed">
+  <!-- Flex Container -->
+  <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+    <!-- Heading -->
+    <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+      Simplify how your team works today.
+    </h2>
+    <!-- Button -->
+    <div>
+      <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full baseline hover:bg-gray-400">Get Started</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-veryDarkBlue">
+  <div class="flex container flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+    
+    <!-- Logo & Social links  -->
+    <div class="flex flex-col-reverse items-center justify-between space-y-10 md:space-y-12 md:flex-col md:items-start">
+      <!-- Logo -->
+      <div class="mt-10 md:mt-0">
+        <img src="../assets/logo.svg" alt="Company logo">
+      </div>
+      <div class="mx-auto text-center text-white md:hidden">
+        Copyright &copy; 2024, All Rights Reserved.  
+      </div>
+      <div class="flex justify-center space-x-4">
+        <a href="#">
+          <img src="../assets/icon-facebook.svg" alt="facebook" class="h-8">
+        </a>
+        <a href="#">
+          <img src="../assets/icon-youtube.svg" alt="youtube" class="h-8">
+        </a>
+        <a href="#">
+          <img src="../assets/icon-twitter.svg" alt="twitter" class="h-8">
+        </a>
+        <a href="#">
+          <img src="../assets/icon-pinterest.svg" alt="pinterest" class="h-8">
+        </a>
+        <a href="#">
+          <img src="../assets/icon-instagram.svg" alt="instagram" class="h-8">
+        </a>
+      </div>
+    </div>
+    <!-- List Container -->
+    <div class="justify-around space-x-32 hidden lg:flex">
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:text-brightRed">Home</a>
+        <a href="#" class="hover:text-brightRed">Pricing</a>
+        <a href="#" class="hover:text-brightRed">Products</a>
+        <a href="#" class="hover:text-brightRed">About</a>
+      </div>
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:text-brightRed">Careers</a>
+        <a href="#" class="hover:text-brightRed">Community</a>
+        <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+        <a href="#" class="hover:text-brightRed">Support</a>
+      </div>
+    </div>
+    <!-- Input Container -->
+    <div class="flex flex-col justify-between">
+      <form action="">
+        <div class="flex space-x-3">
+          <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updated in your inbox">
+          <button class="px-6 py-2 text-white rounded-full bg-brightRedLight focus:outline-none">
+            Go
+          </button>
+        </div>
+      </form>
+      <div class="hidden text-white md:block">
+        Copyright &copy; 2024, All Rights Reserved.
+      </div>
+    </div>
+  </div>
+
+
+
+</footer>
+<!-- Modal -->
+<div id="form-modal" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+  <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute right-4 top-4 rounded bg-gray-300 hover:bg-gray-800 hover:text-white form-close">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+        <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+          <form action="https://formspree.io/f/mbjnjove" method="POST" class="max-w-md mx-auto px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                Your email:
+              </label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" name="email" placeholder="Your email" required>
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                Your message:
+              </label>
+              <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+              <button type="reset" class="inline-flex items-center justify-center rounded-md bg-brightRedLight text-white hover:bg-brightRed focus:outline-none focus:shadow-outline-red px-3 py-2 text-sm font-semibold">
+                Reset
+              </button>
+              <button type="submit" class="ml-3 inline-flex items-center justify-center rounded-md bg-green-300 text-gray-900 hover:bg-green-600 focus:outline-none focus:shadow-outline-blue px-3 py-2 text-sm font-semibold">
+                Send
+              </button>
+            </div>
+          </form>          
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Script -->
+<script src="../js/script.js"></script>
+</body>
+</html>
