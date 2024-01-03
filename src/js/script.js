@@ -12,6 +12,7 @@ btn.addEventListener('click', () => {
 formCloseBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
        formModal.classList.toggle('hidden');
+       nav.classList.toggle('hidden');
     });
 }   ); 
 
